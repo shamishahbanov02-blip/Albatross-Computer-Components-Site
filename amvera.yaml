@@ -8,7 +8,8 @@ build:
   commands:
     - npm install
     - npm run build
-
+  artifacts:
+    dist: dist
 run:
   # Запуск статики через легковесный сервер serve (порт Amvera подставит автоматически или мы используем npx)
-  command: npx serve -s dist
+  command: npx serve -s dist -p 80
