@@ -98,18 +98,18 @@ export default function App() {
         className={`relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-20 lg:pt-24 pb-16 lg:pb-32 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16 reveal-up ${heroReveal.isVisible ? 'active' : ''}`}
       >
         <div className="flex-1 flex flex-col items-center text-center lg:items-start lg:text-left w-full">
-          <div className="inline-flex items-center justify-center gap-1.5 px-2.5 py-1.5 rounded-full border border-white/10 bg-white/5 text-[10px] sm:text-xs font-medium text-blue-400 mb-5 lg:mb-8 backdrop-blur-sm h-auto min-h-[28px] max-w-[95%] sm:max-w-full">
+          <div className="inline-flex items-center justify-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 text-[11px] sm:text-xs font-medium text-blue-400 mb-6 lg:mb-8 backdrop-blur-sm h-auto min-h-[32px] max-w-[90%] sm:max-w-full">
             <span className="relative flex h-2 w-2 shrink-0">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
             <span className="whitespace-normal break-words leading-tight">Новые поставки DDR5 уже на складе</span>
           </div>
-          <h1 className="text-[26px] leading-[1.1] sm:text-5xl lg:text-7xl font-bold tracking-tighter text-white mb-4 lg:mb-6 w-full px-1 sm:px-0 break-words [hyphens:auto]">
+          <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold tracking-tighter text-white mb-5 lg:mb-6 leading-[1.15] w-full px-2 sm:px-0">
             МАКСИМАЛЬНАЯ <br className="hidden lg:block"/>ПРОИЗВОДИТЕЛЬНОСТЬ. <br className="hidden lg:block"/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-600 block mt-1.5 lg:inline lg:mt-0">ЛУЧШИЕ ЦЕНЫ.</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-600 block mt-2 lg:inline lg:mt-0">ЛУЧШИЕ ЦЕНЫ.</span>
           </h1>
-          <p className="text-sm sm:text-lg text-gray-400 mb-6 lg:mb-8 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed px-2 sm:px-0">
+          <p className="text-base sm:text-lg text-gray-400 mb-8 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed px-4 sm:px-0">
             ACC — ваш надежный партнер в мире High-End комплектующих. Топовая оперативная память Kingston и Corsair со скоростью до 6400+ MHz по лучшим ценам в РФ.
           </p>
           <div className="flex flex-col items-center lg:items-start justify-center lg:justify-start gap-4 w-full sm:w-auto px-4 sm:px-0">
