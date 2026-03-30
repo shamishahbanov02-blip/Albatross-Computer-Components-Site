@@ -95,38 +95,33 @@ export default function App() {
       {/* Hero Section */}
       <main 
         ref={heroReveal.ref}
-        className={`relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-20 lg:pt-24 pb-16 lg:pb-32 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16 reveal-up ${heroReveal.isVisible ? 'active' : ''}`}
+        className={`relative z-10 max-w-7xl mx-auto px-6 pt-24 pb-32 flex flex-col lg:flex-row items-center justify-between gap-16 reveal-up ${heroReveal.isVisible ? 'active' : ''}`}
       >
-        <div className="flex-1 flex flex-col items-center text-center lg:items-start lg:text-left w-full">
-          <div className="inline-flex items-center justify-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 text-[11px] sm:text-xs font-medium text-blue-400 mb-6 lg:mb-8 backdrop-blur-sm h-auto min-h-[32px] max-w-[90%] sm:max-w-full">
-            <span className="relative flex h-2 w-2 shrink-0">
+        <div className="flex-1 text-center lg:text-left">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-medium text-blue-400 mb-8 backdrop-blur-sm">
+            <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
-            <span className="whitespace-normal break-words leading-tight">Новые поставки DDR5 уже на складе</span>
+            Новые поставки DDR5 уже на складе
           </div>
-          <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold tracking-tighter text-white mb-5 lg:mb-6 leading-[1.15] w-full px-2 sm:px-0">
-            МАКСИМАЛЬНАЯ <br className="hidden lg:block"/>ПРОИЗВОДИТЕЛЬНОСТЬ. <br className="hidden lg:block"/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-600 block mt-2 lg:inline lg:mt-0">ЛУЧШИЕ ЦЕНЫ.</span>
+          <h1 className="text-3xl min-[400px]:text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tighter text-white mb-6 leading-[1.1] break-words">
+            МАКСИМАЛЬНАЯ <br className="hidden lg:block"/>ПРОИЗВОДИТЕЛЬНОСТЬ. <br/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-600">ЛУЧШИЕ ЦЕНЫ.</span>
           </h1>
-          <p className="text-base sm:text-lg text-gray-400 mb-8 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed px-4 sm:px-0">
+          <p className="text-base sm:text-lg text-gray-400 mb-10 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
             ACC — ваш надежный партнер в мире High-End комплектующих. Топовая оперативная память Kingston и Corsair со скоростью до 6400+ MHz по лучшим ценам в РФ.
           </p>
-          <div className="flex flex-col items-center lg:items-start justify-center lg:justify-start gap-4 w-full sm:w-auto px-4 sm:px-0">
-            <div className="w-full sm:w-auto">
-              <BorderBeamButton 
-                onClick={() => document.getElementById('catalog')?.scrollIntoView({ behavior: 'smooth' })}
-                className="w-full sm:w-auto h-14"
-              >
-                Открыть каталог
-              </BorderBeamButton>
-            </div>
-            <a href="#about" onClick={(e) => handleScroll(e, 'about')} className="text-sm font-medium text-gray-400 hover:text-white flex items-center justify-center gap-2 transition-colors group mt-2 pb-2">
+          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
+            <BorderBeamButton onClick={() => document.getElementById('catalog')?.scrollIntoView({ behavior: 'smooth' })}>
+              Открыть каталог
+            </BorderBeamButton>
+            <a href="#about" onClick={(e) => handleScroll(e, 'about')} className="text-sm font-medium text-gray-400 hover:text-white flex items-center gap-2 transition-colors group">
               Наши преимущества <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
         </div>
-        <div className="flex-1 w-full flex justify-center items-center mt-8 mb-12 lg:mt-0 lg:mb-0 transform scale-[0.65] sm:scale-100 origin-center">
+        <div className="flex-1 w-full flex justify-center items-center mt-16 lg:mt-0">
           <RAMStick />
         </div>
       </main>
