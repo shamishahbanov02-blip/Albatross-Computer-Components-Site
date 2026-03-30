@@ -2,13 +2,10 @@ meta:
   environment: node
   toolchain:
     name: npm
-    version: 20
-
+    version: "20"
 build:
   commands:
     - npm install
     - npm run build
-
 run:
-  # Запуск статики через легковесный сервер serve (--yes чтобы не запрашивало подтверждение установки)
   command: npx --yes serve -s dist -p 80
