@@ -1,5 +1,5 @@
 meta:
-  environment: nodejs
+  environment: node
   toolchain:
     name: npm
     version: 20
@@ -8,8 +8,7 @@ build:
   commands:
     - npm install
     - npm run build
-  artifacts:
-    dist: dist
+
 run:
-  # Запуск статики через легковесный сервер serve (порт Amvera подставит автоматически или мы используем npx)
-  command: npx serve -s dist -p 80
+  # Запуск статики через легковесный сервер serve (--yes чтобы не запрашивало подтверждение установки)
+  command: npx --yes serve -s dist -p 80
