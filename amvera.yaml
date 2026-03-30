@@ -1,11 +1,9 @@
 meta:
   environment: node
   toolchain:
-    name: npm
-    version: "20"
+    name: browser
+    version: 20
+
 build:
-  commands:
-    - npm install
-    - npm run build
-run:
-  command: npx --yes serve -s dist -p 80
+  artifacts:
+    "dist/*": /
